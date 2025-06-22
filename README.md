@@ -5,7 +5,7 @@ This project analyzes key on-page SEO factors that influence search engine ranki
 ⸻
 
 📁 Project Structure
-
+```
 .
 ├── sftop10_crawler.ipynb         # Web scraping for top 10 ranked law firm pages
 ├── SEO_data_cleaning.ipynb       # Data preprocessing and cleaning
@@ -18,7 +18,7 @@ This project analyzes key on-page SEO factors that influence search engine ranki
 │   ├── Internal Linking.png
 │   └── Page Load Performance.png
 └── README.md
-
+```
 ⸻
 
 📊 Key Findings
