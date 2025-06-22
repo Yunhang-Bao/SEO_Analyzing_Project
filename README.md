@@ -82,23 +82,23 @@ Radar chart summarizing differences in key SEO metrics.
 ⸻
 
 ⚙️ Tech Stack
-	•	Python / Jupyter Notebooks
-	•	requests, BeautifulSoup, tqdm – web scraping
-	•	pandas, numpy – data processing
-	•	matplotlib, seaborn – data visualization
-	•	lighthouse / Pagespeed API – performance metrics (optional)
+* Python / Jupyter Notebooks
+* requests, BeautifulSoup, tqdm – web scraping
+* pandas, numpy – data processing
+* matplotlib, seaborn – data visualization
+* lighthouse / Pagespeed API – performance metrics (optional)
 
 ⸻
 
 ✅ How to Use
-	1.	Clone the repo
-	2.	Run sftop10_crawler.ipynb to scrape legal websites and extract signals
-	3.	Clean the data using SEO_data_cleaning.ipynb
-	4.	Enrich the features and generate visuals from SEO_expanding.ipynb
+1. Clone the repo
+2. Run sftop10_crawler.ipynb to scrape legal websites and extract signals
+3. Clean the data using SEO_data_cleaning.ipynb
+4. Enrich the features and generate visuals from SEO_expanding.ipynb
 
 ⸻
 
 📌 Future Work
-	•	Add semantic analysis of headings and content topics
-	•	Include backlink profile via Moz/Majestic API
-	•	Run statistical tests to validate feature importance
+* Add semantic analysis of headings and content topics
+* Include backlink profile via Moz/Majestic API
+* Run statistical tests to validate feature importance
