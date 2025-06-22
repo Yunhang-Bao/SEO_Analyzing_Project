@@ -7,46 +7,76 @@ This project analyzes key on-page SEO factors that influence search engine ranki
 📁 Project Structure
 ```
 .
-├── sftop10_crawler.ipynb         # Web scraping for top 10 ranked law firm pages
-├── SEO_data_cleaning.ipynb       # Data preprocessing and cleaning
-├── SEO_expanding.ipynb           # Feature engineering and signal enrichment
-├── sf_top3_seo_signals_results.csv   # Cleaned SEO signal data for top 3 pages
-├── sf_top10_seo_signals_results.csv  # Cleaned SEO signal data for top 4–10 pages
-├── visuals/
-│   ├── Alt Text Coverage.png
-│   ├── Content Length Comparison.png
-│   ├── Internal Linking.png
-│   └── Page Load Performance.png
+├── code/
+│   ├── sftop10_crawler.ipynb        # Web scraping: crawl top 10 law firm result pages
+│   ├── SEO_data_cleaning.ipynb      # Clean and process raw HTML signal data
+│   └── SEO_expanding.ipynb          # Enrich with additional SEO metrics (Moz, Lighthouse, etc.)
+│
+├── result/
+│   ├── part1_Moz_Enriched_Results/  # Intermediate JSON or HTML parsing results
+│   ├── Part2_Moz_Enriched_Results/  # Additional or normalized metrics
+│   ├── sf_top3_seo_signals_results.csv     # Final feature set for Top 3 ranked pages
+│   ├── sf_top10_seo_signals_results.csv    # Final feature set for Top 4–10 ranked pages
+│
+│   # 📊 Visualization outputs
+│   ├── Alt Text Coverage & External Linking: Top 3 vs Top 4–10.png
+│   ├── Content Length Comparison: Top 3 vs Top 4–10.png
+│   ├── Internal Linking: Top 3 vs Top 4–10.png
+│   ├── Page Load Performance: Top 3 vs Top 4–10 (San Francisco).png
+│   └── Radar Chart of Key SEO Signals (Normalized).png
+│
 └── README.md
 ```
 ⸻
 
 📊 Key Findings
 
-1. Alt Text & External Links
+1. 🖼️ Alt Text Coverage & External Linking
 
-Top 3 pages show slightly more consistent usage of image alt attributes, but pages ranked 4–10 tend to have significantly more external links — which may not translate directly to better rankings.
+Top 3 pages have slightly more consistent alt text usage. Interestingly, Top 4–10 pages contain more external links, but that doesn’t directly lead to better rankings.
 
+<img src="result/Alt%20Text%20Coverage%20&%20External%20Linking:%20Top%203%20vs%20Top%204–10.png" alt="Alt Text and External Linking" width="700"/>
 
-⸻
-
-2. Content Length
-
-Word count is slightly higher on pages ranked 4–10, but the difference is not statistically significant. High-ranking content tends to be more concise and focused.
 
 
 ⸻
 
-3. Internal Linking
+2. 📄 Content Length Comparison
 
-Top 3 pages show stronger internal linking strategies, which likely help with crawlability and topical authority.
+Top 4–10 pages tend to have slightly higher word counts, though medians are close. Top-ranked pages may emphasize concise, focused content.
+
+<img src="result/Content%20Length%20Comparison:%20Top%203%20vs%20Top%204–10.png" alt="Content Length" width="600"/>
+
 
 
 ⸻
 
-4. Page Load Speed
+3. 🔗 Internal Linking
 
-Top-ranking pages load faster, both in overall load time and first paint — a critical factor for user experience and SEO.
+Top 3 results generally feature more internal links, which may improve crawlability and SEO authority structure.
+
+<img src="result/Internal%20Linking:%20Top%203%20vs%20Top%204–10.png" alt="Internal Linking" width="600"/>
+
+
+
+⸻
+
+4. ⚡ Page Load Performance (San Francisco)
+
+Page speed remains critical: Top 3 pages load ~30% faster on average compared to lower-ranking pages.
+
+<img src="result/Page%20Load%20Performance:%20Top%203%20vs%20Top%204–10%20(San%20Francisco).png" alt="Page Load Performance" width="700"/>
+
+
+
+⸻
+
+5. 🕸️ Radar of Key SEO Signals
+
+Radar chart summarizing differences in key SEO metrics.
+
+<img src="result/Radar%20Chart%20of%20Key%20SEO%20Signals%20(Normalized).png" alt="Radar Chart" width="600"/>
+
 
 
 ⸻
