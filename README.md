@@ -19,7 +19,6 @@ This project analyzes key on-page SEO factors that influence search engine ranki
 │   └── Page Load Performance.png
 └── README.md
 
-
 ⸻
 
 📊 Key Findings
